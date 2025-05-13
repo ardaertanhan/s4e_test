@@ -40,13 +40,13 @@ Dosyayı doğru şekilde indirdiğinizden emin olun ve terminal/powershellde ça
 python -m pytest -s edge_tests/
 Edge Testing & Sonuçları
 Edge Test Kodu, Test Açıklaması ve Sonuçları
-Boş bir input yolladıktan sonra “Retry” tuşuna basarak modal’in açık kalmasını sağlamak. Başarısız sonuç, modal beklenmedik şekilde kapandı.
-“!!!” veya “asdf” gibi inputlrı verip “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarılı sonuç.
-Modale 100+ karakteri inputu verip “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarılı sonuç.
-Modale XSS inputu verip  (<script>alert(1)</script>)  “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarısız sonuç, modal beklenmedik şekilde kapandı.
-Modale emoji inputu verip  >)  “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarısız sonuç, modal beklenmedik şekilde kapandı.
-Submit butonuna bas, işlemin ortasında modali kapat, hızlıca tekrar gönder. Başarılı sonuç.
-Modale SQL inputu verip  (' OR 1=1 --)  “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarısız sonuç, modal beklenmedik şekilde kapandı.
+E01 - Boş bir input yolladıktan sonra “Retry” tuşuna basarak modal’in açık kalmasını sağlamak. Başarısız sonuç, modal beklenmedik şekilde kapandı.
+E02 - “!!!” veya “asdf” gibi inputlrı verip “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarılı sonuç.
+E03 -Modale 100+ karakteri inputu verip “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarılı sonuç.
+E04 -Modale XSS inputu verip  (<script>alert(1)</script>)  “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarısız sonuç, modal beklenmedik şekilde kapandı.
+E05 -Modale emoji inputu verip  >)  “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarısız sonuç, modal beklenmedik şekilde kapandı.
+E06 -Submit butonuna bas, işlemin ortasında modali kapat, hızlıca tekrar gönder. Başarılı sonuç.
+E07 -Modale SQL inputu verip  (' OR 1=1 --)  “Retry” butonuna bastıktan sonra modalin açık kalmasını sağlamak. Başarısız sonuç, modal beklenmedik şekilde kapandı.
 
 Bu Testlerin Ortaya Çıkardıkları: Yukarıdaki tüm başarısızlıklar web uygulamasındaki geçerli başarısızlıkları gösterir. Bu testler saldırı örneklerini ve end user kullanıcı davranışlarını (ör. spam tıklamaları, enjeksiyon dizeleri, çöp verileri) simüle eder.
 
